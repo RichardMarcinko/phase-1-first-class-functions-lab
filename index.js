@@ -13,12 +13,15 @@ const createFareMultiplier = (multiplier) => {
 }
 const fareDoubler = createFareMultiplier(2)
 const fareTripler = createFareMultiplier(3)
+// function selectDifferentDrivers(drivers, driversSlice) {
+//     if (driversSlice === returnFirstTwoDrivers) {
+//         return driversslice
+//     }
+//     if (driversSlice === returnLastTwoDrivers) {
+//         return returnLastTwoDrivers(drivers)
+//     }
+//     else false;
+// }
 function selectDifferentDrivers(drivers, driversSlice) {
-    if (driversSlice === returnFirstTwoDrivers) {
-        return returnFirstTwoDrivers(drivers)
-    }
-    if (driversSlice === returnLastTwoDrivers) {
-        return returnLastTwoDrivers(drivers)
-    }
-    else false;
+    return driversSlice(drivers);
 }
